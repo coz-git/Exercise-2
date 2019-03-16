@@ -1,0 +1,111 @@
+html, body {
+	height: 100%;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: 1.7;
+	background: #21212d;
+}
+
+.background {
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+	z-index: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	align-items: center;
+	overflow: hidden;
+}
+
+.background .calculator {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	padding: 1em 3em;
+	max-width: 680px;
+	overflow: auto;
+	background-color: rgba(255, 255, 255, .5);
+}
+
+.result {
+    background-color : #C0C0C0;
+	color: #fff;
+	font-size: 1.714285714em;
+	font-family: 'Old Standard TT', serif;
+	padding: 0.5em 0.75em;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    text-align: right;
+	height: 150px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.result .history {
+    text-align: left;
+    height: 15px;
+	margin: 0 20px;
+}
+
+.result .history #history-value {
+    font-size: 20px;
+}
+
+.result .display #display-value {
+    padding-top: 15px;
+}
+
+.result .display {
+    text-align: right;
+    font-size: 30px;
+    color: orangered;
+}
+
+.keys {
+	height: auto;
+	width: auto;
+	padding-left: 10px;
+}
+
+.operator, .number, .empty {
+	width: 80px;
+	height: 80px;
+    margin: 15px;
+    padding: 25px;
+    border-radius: 30%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+    float: left;
+}
+
+.operator {
+    background-color: rgba(170, 11, 11, 0.774);
+}
+
+.number {
+    background-color: rgba(37, 50, 228, 0.534);
+}
+
+.empty {
+	background-color: rgba(255, 255, 255, 0.103);
+}
+
+.number, .operator {
+    cursor: pointer;
+}
+
+.number:focus, .operator:focus, .empty:focus {
+    outline: none;
+}
